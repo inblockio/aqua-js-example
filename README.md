@@ -1,2 +1,3 @@
-# v1.0.0-alpha.2
-Demo data for the given version of the AQP reference implementation
+Protocol version reference: https://aqua-protocol.org/docs/v3/schema_2
+
+An basic example project for using aqua-js-sdk
