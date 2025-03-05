@@ -20,7 +20,7 @@ The application performs the following operations:
 To run this demo, you'll need:
 
 1. Node.js (v14 or newer recommended)
-2. A local copy of the aquafier-js-sdk (or installed from npm)
+2. A local copy of the aquafier-js-sdk (https://github.com/inblockio/aqua-js-sdk or installed from npm)
 3. A valid `credentials.json` file in the project root with the required authentication data
 
 ## Getting Started
