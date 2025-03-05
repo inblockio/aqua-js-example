@@ -75,6 +75,15 @@ async function run() {
                 let signRes = await aqua.signAquaTree(aquatreewrapper, `cli`, credentialsData, true);
                 console.log("✅ Aqua tree signed successfully");
                 
+                // Add another verification step after signing
+                console.log("\n⏳ Verifying signed aqua tree...");
+                let verifyAfterSignRes = await aqua.verifyAquaTree(data.aquaTree!!, [file]);
+                if (verifyAfterSignRes.isOk()) {
+                    console.log("✅ Signed aqua tree verification successful!");
+                } else {
+                    console.error("❌ Signed aqua tree verification failed");
+                }
+                
                 // Step 4: Write the results to disk
                 console.log("\n⏳ Writing results to disk...");
                 
